@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growth 3X - Unlock Your True Potential</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts - Montserrat and Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <style>
+        :root {
+            --primary-blue: #0a2463;
+            --secondary-blue: #3e92cc;
+            --vibrant-orange: #ff8c42;
+            --vibrant-yellow: #ffca3a;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .btn-primary {
+            background-color: var(--vibrant-orange);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--vibrant-yellow);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .btn-secondary {
+            background-color: var(--primary-blue);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--secondary-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            transform: translateY(100%);
+            transition: transform 0.5s ease;
+        }
+        
+        .sticky-cta.show {
+            transform: translateY(0);
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md py-4 px-6 fixed w-full z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-900">Growth<span class="text-orange-500">3X</span></a>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="font-medium hover:text-orange-500 transition">Home</a>
+                <a href="#mission" class="font-medium hover:text-orange-500 transition">Our Mission</a>
+                <a href="#services" class="font-medium hover:text-orange-500 transition">Services</a>
+                <a href="#testimonials" class="font-medium hover:text-orange-500 transition">Success Stories</a>
+                <a href="#contact" class="font-medium hover:text-orange-500 transition">Contact</a>
+            </div>
+            
+            <button class="md:hidden focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+            
+            <a href="#contact" class="hidden md:block bg-orange-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-orange-400 transition shadow-lg">Book a Call</a>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden bg-white fixed z-40 w-full h-full top-0 left-0 pt-24 px-6">
+        <div class="flex flex-col space-y-6 text-center">
+            <a href="#home" class="font-medium text-xl py-2 hover:text-orange-500 transition">Home</a>
+            <a href="#mission" class="font-medium text-xl py-2 hover:text-orange-500 transition">Our Mission</a>
+            <a href="#services" class="font-medium text-xl py-2 hover:text-orange-500 transition">Services</a>
+            <a href="#testimonials" class="font-medium text-xl py-2 hover:text-orange-500 transition">Success Stories</a>
+            <a href="#contact" class="font-medium text-xl py-2 hover:text-orange-500 transition">Contact</a>
+            <a href="#contact" class="bg-orange-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-orange-400 transition shadow-lg mx-auto">Book a Call</a>
+        </div>
+    </div>
+    
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 bg-gradient-to-r from-blue-900 to-blue-800 text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-10 lg:mb-0">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 animate-fade-in">
+                        Unlock Your True Potential. <span class="text-orange-400">Become Unstoppable.</span>
+                    </h1>
+                    <p class="text-xl mb-8 opacity-90 animate-fade-in" style="animation-delay: 0.2s;">
+                        Master the skills that schools never taught you—confidence, sales, communication, and leadership.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 animate-fade-in" style="animation-delay: 0.4s;">
+                        <a href="#contact" class="btn-primary text-center px-8 py-4 rounded-full font-bold text-white text-lg shadow-lg">
+                            Book a Free Consultation
+                        </a>
+                        <a href="#services" class="btn-secondary text-center px-8 py-4 rounded-full font-bold text-white text-lg shadow-lg">
+                            Start Your Growth Journey
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 animate-fade-in" style="animation-delay: 0.6s;">
+                    <img src="./images/confident_professionals.png" alt="Confident professionals" class="rounded-lg shadow-2xl mx-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Trust Building Section -->
+    <section class="py-6 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-wrap justify-center items-center text-center">
+                <div class="px-6 py-3">
+                    <div class="flex items-center">
+                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                        <span class="font-medium">Trusted by 20+ companies</span>
+                    </div>
+                </div>
+                <div class="px-6 py-3">
+                    <div class="flex items-center">
+                        <i class="fas fa-star text-yellow-500 mr-2"></i>
+                        <span class="font-medium">95% Satisfaction Rate</span>
+                    </div>
+                </div>
+                <div class="px-6 py-3">
+                    <div class="flex items-center">
+                        <i class="fas fa-award text-blue-500 mr-2"></i>
+                        <span class="font-medium">Founded by Communication Experts</span>
+                    </div>
+                </div>
+                <div class="px-6 py-3">
+                    <div class="flex items-center">
+                        <i class="fas fa-users text-orange-500 mr-2"></i>
+                        <span class="font-medium">5000+ Lives Transformed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Mission Section -->
+    <section id="mission" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-10 lg:mb-0">
+                    <div class="relative">
+                        <img src="./images/our_mission.png" alt="Our mission" class="rounded-lg shadow-xl mx-auto">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <button class="play-video bg-white text-orange-500 rounded-full w-20 h-20 flex items-center justify-center shadow-lg">
+                                <i class="fas fa-play text-2xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 lg:pl-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-blue-900">
+                        Our Mission: Transform Lives Through Powerful Skills
+                    </h2>
+                    <p class="text-lg text-gray-700 mb-6">
+                        At Growth3X, we believe that everyone deserves access to the skills that create true success - not just academic knowledge, but practical abilities that drive confidence, communication, and leadership.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-8">
+                        Founded by industry experts who saw a gap in traditional education, we've created training programs that elevate your personal and professional presence to exceptional levels.
+                    </p>
+                    <a href="#" class="text-orange-500 font-bold flex items-center group">
+                        Meet the People Behind the Passion
+                        <i class="fas fa-arrow-right ml-2 group-hover:ml-4 transition-all"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- What We Offer Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-blue-900">What We Offer</h2>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+                    Comprehensive programs designed to transform every aspect of your personal and professional presence.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Service Card 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="h-3 bg-orange-500"></div>
+                    <div class="p-8">
+                        <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-comments text-orange-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-blue-900">Communication Mastery</h3>
+                        <p class="text-gray-700 mb-6">
+                            Learn to articulate your ideas with clarity and conviction, becoming a persuasive and memorable communicator.
+                        </p>
+                        <a href="#" class="text-orange-500 font-bold flex items-center justify-between">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="h-3 bg-blue-700"></div>
+                    <div class="p-8">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-handshake text-blue-700 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-blue-900">Sales Excellence</h3>
+                        <p class="text-gray-700 mb-6">
+                            Master the psychology of influence and negotiation to close deals with confidence and integrity.
+                        </p>
+                        <a href="#" class="text-blue-700 font-bold flex items-center justify-between">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="h-3 bg-yellow-500"></div>
+                    <div class="p-8">
+                        <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-user-tie text-yellow-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-blue-900">Personality Development</h3>
+                        <p class="text-gray-700 mb-6">
+                            Build unshakeable confidence and presence that commands attention in any room you enter.
+                        </p>
+                        <a href="#" class="text-yellow-500 font-bold flex items-center justify-between">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service Card 4 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="h-3 bg-green-500"></div>
+                    <div class="p-8">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-chart-line text-green-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-blue-900">Leadership Development</h3>
+                        <p class="text-gray-700 mb-6">
+                            Discover how to inspire and lead teams with vision, empathy, and strategic thinking.
+                        </p>
+                        <a href="#" class="text-green-500 font-bold flex items-center justify-between">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service Card 5 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="h-3 bg-purple-500"></div>
+                    <div class="p-8">
+                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-brain text-purple-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-blue-900">Mindset Transformation</h3>
+                        <p class="text-gray-700 mb-6">
+                            Rewire your thinking patterns to overcome limitations and achieve breakthrough results.
+                        </p>
+                        <a href="#" class="text-purple-500 font-bold flex items-center justify-between">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service Card 6 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="h-3 bg-red-500"></div>
+                    <div class="p-8">
+                        <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-rocket text-red-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-blue-900">Career Acceleration</h3>
+                        <p class="text-gray-700 mb-6">
+                            Strategic guidance to position yourself for rapid advancement and recognition in your field.
+                        </p>
+                        <a href="#" class="text-red-500 font-bold flex items-center justify-between">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Banner -->
+    <section class="py-16 bg-gradient-to-r from-blue-900 to-blue-800 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Don't wait for confidence to come—train for it.</h2>
+            <p class="text-xl mb-10 max-w-3xl mx-auto">
+                The difference between where you are and where you want to be is the training you haven't taken yet.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="#contact" class="btn-primary px-8 py-4 rounded-full font-bold text-lg shadow-lg">
+                    Book a Free Demo Call
+                </a>
+                <a href="#" class="bg-transparent border-2 border-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-blue-900 transition-all shadow-lg">
+                    Join Our Next Webinar
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-blue-900">Success Stories</h2>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+                    Real transformations from real people who took the leap and invested in themselves.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="flex items-center mb-6">
+                        <img src="/api/placeholder/80/80" alt="Priya" class="w-16 h-16 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-lg">Priya Sharma</h4>
+                            <p class="text-gray-600">B2B Sales Executive</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6">
+                        "I used to fear interviews. Now I close deals like a pro. The confidence I've gained through Growth3X is invaluable and has completely transformed my career trajectory."
+                    </p>
+                    <div class="flex text-yellow-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="flex items-center mb-6">
+                        <img src="/api/placeholder/80/80" alt="Rahul" class="w-16 h-16 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-lg">Rahul Mehta</h4>
+                            <p class="text-gray-600">Team Manager</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6">
+                        "My team was underperforming and I was nearly replaced. The leadership program gave me the tools to motivate my team and increase productivity by 45% in just 3 months."
+                    </p>
+                    <div class="flex text-yellow-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="flex items-center mb-6">
+                        <img src="/api/placeholder/80/80" alt="Neha" class="w-16 h-16 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-lg">Neha Kapoor</h4>
+                            <p class="text-gray-600">Entrepreneur</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6">
+                        "Starting my business was terrifying, but the mindset transformation program gave me the courage to take the leap. First year revenue has already exceeded our five-year projection."
+                    </p>
+                    <div class="flex text-yellow-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="text-orange-500 font-bold text-lg flex items-center justify-center group">
+                    See More Transformations
+                    <i class="fas fa-arrow-right ml-2 group-hover:ml-4 transition-all"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Free Resources Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-blue-900">Free Growth Resources</h2>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+                    Start your growth journey today with these valuable resources.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Resource 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <img src="/api/placeholder/400/200" alt="Confidence quiz" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-blue-900">Confidence Score Quiz</h3>
+                        <p class="text-gray-700 mb-6">
+                            Discover your current confidence level and get personalized tips to improve.
+                        </p>
+                        <a href="#" class="btn-primary block text-center px-6 py-3 rounded-full font-bold text-white">
+                            Take the Quiz
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Resource 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <img src="/api/placeholder/400/200" alt="Free ebook" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-blue-900">Free Ebook</h3>
+                        <p class="text-gray-700 mb-6">
+                            "10 Hacks to Boost Your Communication Skills" - A practical guide for immediate improvement.
+                        </p>
+                        <a href="#" class="btn-primary block text-center px-6 py-3 rounded-full font-bold text-white">
+                            Download Now
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Resource 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <img src="/api/placeholder/400/200" alt="Webinar" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-blue-900">Free Webinar</h3>
+                        <p class="text-gray-700 mb-6">
+                            "5 Mindset Shifts for Career Acceleration" - Join our next live session.
+                        </p>
+                        <a href="#" class="btn-primary block text-center px-6 py-3 rounded-full font-bold text-white">
+                            Reserve Your Spot
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row">
+                <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-blue-900">Ready to Transform?</h2>
+                    <p class="text-lg text-gray-700 mb-8">
+                        Schedule a free consultation call with our experts to discover the right program for your specific goals.
+                    </p>
+                    <div class="bg-gray-50 p-6 rounded-lg mb-8">
+                        <h3 class="text-xl font-bold mb-4 text-blue-900">What You'll Get in Your Free Call:</h3>
+                        <ul class="space-y-3">
+                            <li class="flex">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span>Personalized assessment of your current skills</span>
+                            </li>
+                            <li class="flex">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span>Custom roadmap for your growth journey</span>
+                            </li>
+                            <li class="flex">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span>Program recommendations aligned with your goals</span>
+                            </li>
+                            <li class="flex">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span>Immediate actionable tips you can apply today</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <a href="#" class="text-blue-900 flex items-center font-medium hover:text-orange-500 transition">
+                            <i class="fab fa-whatsapp text-2xl mr-2"></i>
+                            WhatsApp Us
+                        </a>
+                        <a href="#" class="text-blue-900 flex items-center font-medium hover:text-orange-500 transition">
+                            <i class="fas fa-phone-alt mr-2"></i>
+                            +91 98765 43210
+                        </a>
+                        <a href="#" class="text-blue-900 flex items-center font-medium hover:text-orange-500 transition">
+                            <i class="fas fa-envelope mr-2"></i>
+                            hello@growth3x.com
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6 text-blue-900">Book Your Free Consultation</h3>
+                        <form id="contactForm">
+                            <div class="mb-6">
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                            </div>
+                            <div class="mb-6">
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                           </div>
+                           <div class="mb-6">
+                               <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                               <input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                           </div>
+                           <div class="mb-6">
+                               <label for="interest" class="block text-gray-700 font-medium mb-2">I'm Interested In</label>
+                               <select id="interest" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                                   <option value="">Select an option</option>
+                                   <option value="communication">Communication Mastery</option>
+                                   <option value="sales">Sales Excellence</option>
+                                   <option value="personality">Personality Development</option>
+                                   <option value="leadership">Leadership Development</option>
+                                   <option value="mindset">Mindset Transformation</option>
+                                   <option value="career">Career Acceleration</option>
+                               </select>
+                           </div>
+                           <div class="mb-6">
+                               <label for="message" class="block text-gray-700 font-medium mb-2">Your Goals (Optional)</label>
+                               <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
+                           </div>
+                           <button type="submit" class="w-full btn-primary py-4 rounded-full font-bold text-white text-lg shadow-lg">
+                               Schedule My Free Call
+                           </button>
+                       </form>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+   
+   <!-- Newsletter Section -->
+   <section class="py-16 bg-gray-900 text-white">
+       <div class="container mx-auto px-6">
+           <div class="max-w-4xl mx-auto text-center">
+               <h2 class="text-3xl font-bold mb-6">Get Weekly Growth Tips & Inspiration</h2>
+               <p class="text-lg mb-8 opacity-90">
+                   Join our newsletter for exclusive content, success stories, and early access to new programs.
+               </p>
+               <form class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-2">
+                   <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-l-full md:rounded-r-none rounded-r-full focus:outline-none text-gray-900">
+                   <button type="submit" class="btn-primary px-8 py-3 rounded-r-full md:rounded-l-none rounded-l-full font-bold">
+                       Subscribe
+                   </button>
+               </form>
+               <p class="mt-4 text-sm opacity-75">
+                   We respect your privacy. Unsubscribe at any time.
+               </p>
+           </div>
+       </div>
+   </section>
+   
+   <!-- Footer -->
+   <footer class="bg-blue-900 text-white pt-16 pb-6">
+       <div class="container mx-auto px-6">
+           <div class="flex flex-wrap">
+               <div class="w-full md:w-1/4 mb-10 md:mb-0">
+                   <a href="#" class="text-2xl font-bold mb-6 inline-block">Growth<span class="text-orange-500">3X</span></a>
+                   <p class="mb-6 opacity-80 pr-6">
+                       Transforming lives through powerful skills that create true success in personal and professional lives.
+                   </p>
+                   <div class="flex space-x-4">
+                       <a href="#" class="bg-white bg-opacity-20 w-10 h-10 rounded-full flex items-center justify-center hover:bg-opacity-30 transition">
+                           <i class="fab fa-facebook-f"></i>
+                       </a>
+                       <a href="#" class="bg-white bg-opacity-20 w-10 h-10 rounded-full flex items-center justify-center hover:bg-opacity-30 transition">
+                           <i class="fab fa-instagram"></i>
+                       </a>
+                       <a href="#" class="bg-white bg-opacity-20 w-10 h-10 rounded-full flex items-center justify-center hover:bg-opacity-30 transition">
+                           <i class="fab fa-linkedin-in"></i>
+                       </a>
+                       <a href="#" class="bg-white bg-opacity-20 w-10 h-10 rounded-full flex items-center justify-center hover:bg-opacity-30 transition">
+                           <i class="fab fa-youtube"></i>
+                       </a>
+                   </div>
+               </div>
+               
+               <div class="w-full md:w-1/4 mb-10 md:mb-0">
+                   <h3 class="text-xl font-bold mb-6">Quick Links</h3>
+                   <ul class="space-y-3">
+                       <li><a href="#home" class="opacity-80 hover:opacity-100 hover:text-orange-400 transition">Home</a></li>
+                       <li><a href="#mission" class="opacity-80 hover:opacity-100 hover:text-orange-400 transition">Our Mission</a></li>
+                       <li><a href="#services" class="opacity-80 hover:opacity-100 hover:text-orange-400 transition">Services</a></li>
+                       <li><a href="#testimonials" class="opacity-80 hover:opacity-100 hover:text-orange-400 transition">Success Stories</a></li>
+                       <li><a href="#contact" class="opacity-80 hover:opacity-100 hover:text-orange-400 transition">Contact</a></li>
+                   </ul>
+               </div>
+               
+               <div class="w-full md:w-1/4 mb-10 md:mb-0">
+                   <h3 class="text-xl font-bold mb-6">Our Programs</h3>
+                   <ul class="space-y-3">
+                       <li><a href="#" class="opacity-80 hover:opacity-100 hover:text-orange-400 transition">Communication Mastery</a></li>
+                       <li><a href="#" class="opacity-80 hover:opacity-100 hover:text-orange-400 transition">Sales Excellence</a></li>
+                       <li><a href="#" class="opacity-80 hover:opacity-100 hover:text-orange-400 transition">Personality Development</a></li>
+                       <li><a href="#" class="opacity-80 hover:opacity-100 hover:text-orange-400 transition">Leadership Development</a></li>
+                       <li><a href="#" class="opacity-80 hover:opacity-100 hover:text-orange-400 transition">Corporate Training</a></li>
+                   </ul>
+               </div>
+               
+               <div class="w-full md:w-1/4">
+                   <h3 class="text-xl font-bold mb-6">Contact Us</h3>
+                   <ul class="space-y-3">
+                       <li class="flex items-start">
+                           <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                           <span class="opacity-80">123 Growth Tower, Innovation Street, Mumbai 400001, India</span>
+                       </li>
+                       <li class="flex items-center">
+                           <i class="fas fa-phone-alt mr-3"></i>
+                           <span class="opacity-80">+91 98765 43210</span>
+                       </li>
+                       <li class="flex items-center">
+                           <i class="fas fa-envelope mr-3"></i>
+                           <span class="opacity-80">hello@growth3x.com</span>
+                       </li>
+                       <li class="mt-6">
+                           <a href="#contact" class="btn-primary px-6 py-3 rounded-full font-bold inline-block">
+                               Schedule a Free Call
+                           </a>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+           
+           <div class="border-t border-blue-800 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center">
+               <p class="opacity-70 mb-4 md:mb-0">&copy; 2025 Growth3X. All rights reserved.</p>
+               <div class="flex space-x-6">
+                   <a href="#" class="opacity-70 hover:opacity-100 transition">Privacy Policy</a>
+                   <a href="#" class="opacity-70 hover:opacity-100 transition">Terms of Service</a>
+                   <a href="#" class="opacity-70 hover:opacity-100 transition">Cookie Policy</a>
+               </div>
+           </div>
+       </div>
+   </footer>
+   
+   <!-- Sticky CTA -->
+   <div class="sticky-cta bg-blue-900 py-4 px-6 shadow-lg">
+       <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
+           <p class="text-white font-bold mb-4 sm:mb-0">Want to know which course fits you best?</p>
+           <a href="#contact" class="btn-primary px-6 py-2 rounded-full font-bold text-white">
+               Schedule a Free Call Now
+           </a>
+       </div>
+   </div>
+   
+   <!-- Quiz Popup -->
+   <div id="quizPopup" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center hidden">
+       <div class="bg-white rounded-lg shadow-2xl p-8 max-w-md w-full mx-4">
+           <div class="flex justify-between items-center mb-6">
+               <h3 class="text-2xl font-bold text-blue-900">What's Your Confidence Score?</h3>
+               <button id="closeQuiz" class="text-gray-400 hover:text-gray-600 focus:outline-none">
+                   <i class="fas fa-times text-2xl"></i>
+               </button>
+           </div>
+           <p class="text-gray-700 mb-6">
+               Take this 2-minute quiz to discover your current confidence level and get personalized tips to improve.
+           </p>
+           <form id="quizForm">
+               <div class="mb-6">
+                   <label class="block text-gray-700 font-medium mb-2">Do you find it easy to speak up in group settings?</label>
+                   <div class="flex items-center space-x-4">
+                       <label class="flex items-center">
+                           <input type="radio" name="q1" value="1" class="mr-2">
+                           <span>Rarely</span>
+                       </label>
+                       <label class="flex items-center">
+                           <input type="radio" name="q1" value="2" class="mr-2">
+                           <span>Sometimes</span>
+                       </label>
+                       <label class="flex items-center">
+                           <input type="radio" name="q1" value="3" class="mr-2">
+                           <span>Often</span>
+                       </label>
+                       <label class="flex items-center">
+                           <input type="radio" name="q1" value="4" class="mr-2">
+                           <span>Always</span>
+                       </label>
+                   </div>
+               </div>
+               <div class="mb-6">
+                   <label for="email" class="block text-gray-700 font-medium mb-2">Email (to receive your results)</label>
+                   <input type="email" id="quizEmail" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+               </div>
+               <button type="submit" class="w-full btn-primary py-3 rounded-full font-bold text-white">
+                   Get My Confidence Score
+               </button>
+           </form>
+       </div>
+   </div>
+   
+   <!-- Newsletter Popup -->
+   <div id="newsletterPopup" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center hidden">
+       <div class="bg-white rounded-lg shadow-2xl p-8 max-w-md w-full mx-4">
+           <div class="flex justify-between items-center mb-6">
+               <h3 class="text-2xl font-bold text-blue-900">Want 1-on-1 career confidence tips?</h3>
+               <button id="closeNewsletter" class="text-gray-400 hover:text-gray-600 focus:outline-none">
+                   <i class="fas fa-times text-2xl"></i>
+               </button>
+           </div>
+           <p class="text-gray-700 mb-6">
+               Join our newsletter for weekly tips, success stories, and exclusive content to boost your confidence and career.
+           </p>
+           <form id="newsletterForm">
+               <div class="mb-6">
+                   <input type="email" placeholder="Your email address" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+               </div>
+               <button type="submit" class="w-full btn-primary py-3 rounded-full font-bold text-white">
+                   Subscribe Now
+               </button>
+           </form>
+           <p class="mt-4 text-sm text-gray-500 text-center">
+               We respect your privacy. Unsubscribe at any time.
+           </p>
+       </div>
+   </div>
+   
+   <!-- JavaScript -->
+   <script>
+       // Mobile Menu Toggle
+       const menuButton = document.querySelector('nav button');
+       const mobileMenu = document.querySelector('.mobile-menu');
+       
+       menuButton.addEventListener('click', () => {
+           mobileMenu.classList.toggle('hidden');
+       });
+       
+       // Close mobile menu when clicking on a link
+       const mobileLinks = document.querySelectorAll('.mobile-menu a');
+       mobileLinks.forEach(link => {
+           link.addEventListener('click', () => {
+               mobileMenu.classList.add('hidden');
+           });
+       });
+       
+       // Smooth scrolling for anchor links
+       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+           anchor.addEventListener('click', function(e) {
+               e.preventDefault();
+               
+               const targetId = this.getAttribute('href');
+               if (targetId === '#') return;
+               
+               const targetElement = document.querySelector(targetId);
+               if (targetElement) {
+                   window.scrollTo({
+                       top: targetElement.offsetTop - 80,
+                       behavior: 'smooth'
+                   });
+               }
+           });
+       });
+       
+       // Sticky CTA
+       const stickyCta = document.querySelector('.sticky-cta');
+       
+       window.addEventListener('scroll', () => {
+           if (window.scrollY > 500) {
+               stickyCta.classList.add('show');
+           } else {
+               stickyCta.classList.remove('show');
+           }
+       });
+       
+       // Quiz Popup
+       const quizPopup = document.getElementById('quizPopup');
+       const closeQuiz = document.getElementById('closeQuiz');
+       const quizForm = document.getElementById('quizForm');
+       
+       // Show quiz popup after 30 seconds
+       setTimeout(() => {
+           quizPopup.classList.remove('hidden');
+       }, 30000);
+       
+       closeQuiz.addEventListener('click', () => {
+           quizPopup.classList.add('hidden');
+       });
+       
+       quizForm.addEventListener('submit', (e) => {
+           e.preventDefault();
+           quizPopup.classList.add('hidden');
+           alert('Thank you! Your confidence score and personalized tips will be sent to your email shortly.');
+       });
+       
+       // Newsletter Popup
+       const newsletterPopup = document.getElementById('newsletterPopup');
+       const closeNewsletter = document.getElementById('closeNewsletter');
+       const newsletterForm = document.getElementById('newsletterForm');
+       
+       // Show newsletter popup when user is about to leave
+       let showNewsletter = false;
+       
+       document.addEventListener('mouseleave', (e) => {
+           if (e.clientY < 0 && !showNewsletter) {
+               newsletterPopup.classList.remove('hidden');
+               showNewsletter = true;
+           }
+       });
+       
+       closeNewsletter.addEventListener('click', () => {
+           newsletterPopup.classList.add('hidden');
+       });
+       
+       newsletterForm.addEventListener('submit', (e) => {
+           e.preventDefault();
+           newsletterPopup.classList.add('hidden');
+           alert('Thank you for subscribing to our newsletter!');
+       });
+       
+       // Contact Form Submission
+       const contactForm = document.getElementById('contactForm');
+       
+       contactForm.addEventListener('submit', (e) => {
+           e.preventDefault();
+           alert('Thank you for your interest! Our team will contact you shortly to schedule your free consultation.');
+           contactForm.reset();
+       });
+       
+       // Video Play Button
+       const playButton = document.querySelector('.play-video');
+       
+       playButton.addEventListener('click', () => {
+           alert('Video player would open here in the actual implementation.');
+       });
+       
+       // Animation on scroll
+       const animateOnScroll = () => {
+           const elements = document.querySelectorAll('.card-hover');
+           
+           elements.forEach(element => {
+               const elementPosition = element.getBoundingClientRect().top;
+               const screenPosition = window.innerHeight * 0.8;
+               
+               if (elementPosition < screenPosition) {
+                   element.classList.add('animate-fade-in');
+               }
+           });
+       };
+       
+       window.addEventListener('scroll', animateOnScroll);
+       animateOnScroll(); // Run once on page load
+   </script>
+</body>
+</html>
